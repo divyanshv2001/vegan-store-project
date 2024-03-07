@@ -1,10 +1,13 @@
+*{
+    margin: 0;
+}
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
 }
 header{
     position: fixed;
     width: 100%;
+    top:0;
 }
 .topbar{
     background-color: white;
@@ -87,14 +90,15 @@ header{
     border: rgb(170, 210, 54) 2px solid;
 }
 #logo{
-    width:35px;
+    width:40px;
 }
 .landing-page{
     height: 100vh;
     width: 100%;
     background-image: url(./res/background.png);
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,12 +141,15 @@ header{
     font-size: 96px;
     transition:all 0.6s;
     transition-timing-function:ease-in-out;
+    margin: 5px 0px ;
 }
 .step-item h2{
+    margin: 5px 0px ;
     font-weight: 600;
     font-size: 24px;
 }
 .step-item p{
+    margin: 5px 0px ;
     font-size: 14px;
     letter-spacing: 0.5px;
     line-height: 1.6;
@@ -161,5 +168,85 @@ header{
     background-color: #f69dad;
 }
 .step-item:hover i{
-    transform:rotate(360deg) scale(1.5) scale(.8);
+    transform:rotate(360deg) scale(1.1) scale(.8);
+}
+.store-section{
+    width: 100%;
+    height: 80vh;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: #f7eee2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.descripton{
+    width: 100%;
+    max-width: 1100px;
+    text-align: center;
+    padding: 40px 50px;
+}
+.descripton #green-text{
+    font-size: 35px;
+    color: #91ac41;
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.descripton h1{
+    font-family:'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+.descripton #fact-text{
+    font-family:'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin: 10px 0px;
+}
+.store-container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: 0px 40px;
+}
+.store-container #ss-1{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px;
+}
+.store-container #ss-1 h3{
+    font-size: 21px;
+    font-weight: 600;
+    padding: 15px;
+}
+.store-container #ss-1 p{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #8b8b99;
+    padding: 10px;
+    text-align: center;
+}
+.icon-wrapper{
+    background-color: #e3b375;
+    color: white;
+    padding: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+.icon-wrapper i{
+    font-size: 50px;
+}
+#ss-1:hover .icon-wrapper{
+    transform: scale(1.1);
 }
