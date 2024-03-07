@@ -396,11 +396,13 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s;
 }
 .input-wrapper button:hover{
     background-color: #cd5ab800;
     border: #f69dad 2px solid;
     color: black;
+    padding: 16px 73px;
 }
 .social-icons{
     display: flex;
