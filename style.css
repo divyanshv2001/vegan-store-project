@@ -183,9 +183,9 @@ header{
 }
 .descripton{
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
     text-align: center;
-    padding: 40px 50px;
+    padding: 20px 50px;
 }
 .descripton #green-text{
     font-size: 35px;
@@ -200,12 +200,15 @@ header{
     font-weight: 600;
 }
 .descripton #fact-text{
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
     font-family:'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 500;
     color: #8b8b99;
     letter-spacing: 0.5px;
-    margin: 10px 0px;
+    margin: 20px auto;
 }
 .store-container{
     width: 100%;
@@ -222,12 +225,12 @@ header{
     padding: 40px;
 }
 .store-container #ss-1 h3{
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 600;
-    padding: 15px;
+    padding: 20px;
 }
 .store-container #ss-1 p{
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: 0.5px;
     font-weight: 500;
     color: #8b8b99;
@@ -242,11 +245,162 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 .icon-wrapper i{
     font-size: 50px;
 }
 #ss-1:hover .icon-wrapper{
     transform: scale(1.1);
+    box-shadow: 0 12px 16px 0 rgba(39, 39, 47, 0.26);
+    color: rgb(101, 102, 85);
 }
+/* testimonial section start */
+.testimonial-section{
+    width: 100%;
+    height: 90vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.testimonial-container{
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.testimonial-container .testimonial-card{
+    width: 33%;
+    height: 45vh;
+    display: flex;
+    background-color: #f5f6fb;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 30px 40px 30px;
+    border-radius: 30px 0px 30px 30px;
+    margin: 0px 20px;
+}
+.testimonial-container .testimonial-card img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    padding: 25px;
+}
+.testimonial-card #content{
+    font-family:'Poppins', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    color: #8b8b99;
+    text-align: center;
+    padding: 5px 25px 5px 25px;
+}
+.testimonial-card h4{
+    font-family:'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 0px 5px 0px;
+
+}
+.testimonial-card #small{
+    font-family:'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #8b8b99;
+    padding: 5px 0px 5px 0px;
+}
+.testimonial-card:hover{
+    box-shadow: 0 12px 16px 0 rgba(39,39,47,0.06);
+    transition: all 0.3s;
+}
+/* testimonial section  end*/
+/* follow section start */
+.follow-section{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+}
+.follow-section .follow_left{
+    width:67%;
+    background: url(./res/follow_left.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.follow-section .follow_right{
+    width: 33%;
+    background: url(./res/follow_right.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.follow-section .follow_right h1{
+    font-family:'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 100px 0px 20px 0px;
+}
+.follow-section .follow_right p{
+    font-family:'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #8b8b99;
+    padding: 10px 0px 20px 0px;
+    text-align: center;
+}
+.input-wrapper{
+    width: 100%;
+    max-width: 100px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.input-wrapper input{
+    width: 100%;
+    max-width: 200px;
+    padding: 20px 101px;
+    border: 0;
+    border-radius: 4px;
+    margin: 11px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #8b8b99;
+    background-color: #f5f6fb;
+}
+.input-wrapper button{
+    width: 100%;
+    max-width: 100px;
+    padding: 18px 75px;
+    border: 0;
+    border-radius: 4px;
+    margin: 8px 0px;
+    font-family:'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color:  #f69dad;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-wrapper button:hover{
+    background-color: #cd5ab800;
+    border: #f69dad 2px solid;
+    color: black;
+}
+
+/* follow section end */
