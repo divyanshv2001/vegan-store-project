@@ -16,34 +16,36 @@
             <img id="logo" src="./res/logo.png" alt="">
             <div class="menu-items">
                 <div id="menu" class="dropdown-wrapper">
-                    <a href="">Demo Pages <i class="fa-solid fa-caret-down"></i></a>
+                    <a >Links<i class="fa-solid fa-caret-down"></i></a>
                 <div class="dropdown">
                     <div class="menulist">
-                        <a href="">Menu item-1</a>
-                        <a href="">Menu item-2</a>
-                        <a href="">Menu item-3</a>
+                        <a href="#store-section">Store</a>
+                        <a href="#testimonial-section">Testimonials</a>
+                        <a href="#follow-section">Follow Us</a>
                     </div>
                 </div>
                 </div>
-                <a id="menu" href="">Watch Video</a>
-                <a id="menu" href="">Block <i class="fa-solid fa-caret-down"></i></a>
+                <a id="menu" href="#video-section">Watch Video</a>
+                <a id="menu" href="#address-section">Address</a>
                 <a class="green-button" href="">Buy Now</a>
             </div>
         </nav>
+        <div class="arrowup">
+            <a href="#landing-page"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
     </header>
     <main id="main">
-        <section class="landing-page">
-            <h1>Vegan Store Simple Website</h1>
-            
-            <p>With nutrition, all the vital functions of the body are connected. It is the source of the development of tissues and cells, their constant renewal, the saturation of man with energy.</p>
+        <section class="landing-page" id="landing-page">
+                <h1>Vegan Store Simple Website</h1>
+                <p>With nutrition, all the vital functions of the body are connected. It is the source of the development of tissues and cells, their constant renewal, the saturation of man with energy.</p>
         </section>
-        <section class="steps-section">
+        <section class="steps-section" id="steps-section">
             <div class="step-item" id="first-step"><i class="fa-solid fa-scissors"></i><h2>Step 1</h2><p>Vegetables are an integral part of the human diet. They are extremely useful because of the high content of carbohydrates, various acids, vitamins and active elements in the form, easy for digestion.</p></div>
             <div class="step-item" id="second-step"><i class="fa-solid fa-paintbrush"></i><h2>Step 2</h2><p>Fresh tomatoes are ideal for replenishing the loss of minerals. These vegetables contain a lot of acids that our body needs for full-fledged work.</p></div>
             <div class="step-item" id="third-step"><i class="fa-solid fa-bag-shopping"></i><h2>Step 3</h2><p>In the content of vitamin C, sweet peppers are superior to lemons and even black currants! The greatest amount of vitamin is contained around the stalk, that is, in the part of the product that is usually cut during cleaning.</p></div>
             <div class="step-item" id="fourth-step"><i class="fa-regular fa-face-smile"></i><h2>Step 4</h2><p>If you sometimes eat hot chili peppers, this will help normalize cerebral circulation, ease the condition with bronchial asthma, cough, sore throat, flu.</p></div>
         </section>
-        <section class="store-section">
+        <section class="store-section" id="store-section">
             <div class="descripton">
                 <p id="green-text" class="cedarville-cursive-regular">Fresh Food</p>                  
                 <h1>Our Vegan Store!!</h1>
@@ -72,7 +74,7 @@
                 </div>
             </div>
         </section>
-        <section class="testimonial-section">
+        <section class="testimonial-section" id="testimonial-section">
             <div class="descripton">
                 <p id="green-text" class="cedarville-cursive-regular">Fresh Food</p>                  
                 <h1>Our Vegan Store!!</h1>
@@ -99,7 +101,7 @@
                 </div>
             </div>
         </section>
-        <section class="follow-section">
+        <section class="follow-section" id="follow-section">
                 <div class="follow_left"></div>
                 <div class="follow_right">
                     <h1>Follow Us</h1>
@@ -116,9 +118,67 @@
                     </div>
                 </div>
         </section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section class="stats-section" id="stats-section">
+            <div class="stats-container">
+            <div id="stat-1">
+                <h1>7</h1>
+                <p>Years of Experience</p>
+            </div>
+            <div id="stat-1">
+                <h1>123k</h1>
+                <p>Happy Customers</p>
+            </div>
+            <div id="stat-1">
+                <h1>72k</h1>
+                <p>100% Satisfaction</p>
+            </div>
+            <div id="stat-1">
+                <h1>13k</h1>
+                <p>Detox Smoothies</p>
+            </div></div>
+        </section>
+        <section class="video-section" id="video-section">
+            <div class="video-wrapper">
+                    <h1>Vimeo Video</h1>
+                    <div class="line-seprator"></div>
+                    <iframe src="https://player.vimeo.com/video/275412279" frameborder="0"></iframe>
+            </div>
+        </section>
+        <section class="address-section" id="address-section">
+            <div class="address-wrapper">
+                <div class="left-content">
+                    <p id="green-text" class="cedarville-cursive-regular">Visit Us</p>
+                    <h1>Address Information</h1>
+                    <p>Overeating is one of the most common causes of overweight and digestive problems.</p>
+                    <h3>London Store</h3>
+                    <p>Roeterseiland Campus Building E <br>
+                        6th floor London <br>
+                        Monday to Friday : 9am to 8pm <br>
+                        examplemail.mail.com</p>
+                    <h3>Berlin Store</h3>
+                    <p>Roeterseiland Campus Building E <br>
+                        6th floor London <br>
+                        Monday to Friday : 9am to 8pm <br>
+                        examplemail.mail.com</p>
+                </div>
+                <div class="right-content">
+                    <p id="green-text" class="cedarville-cursive-regular">Meet Us</p>
+                    <h1>Address Information</h1>
+                    <p>Overeating is one of the most common causes of overweight and digestive problems.</p>
+                    <div class="form">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Subject">
+                        <textarea placeholder="Message"></textarea>
+                        <button>Send</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer-wrapper">
+                <p>© 2024 by Vegan Store. Proudly created by Divyansh Vishwakarma</p>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Use</a>
 </body>
 </html>
