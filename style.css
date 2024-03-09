@@ -133,12 +133,11 @@ header{
 .steps-section{
     width:100%;
     text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 .step-item{
-    width: 25%;
+    width: 100%;
     padding: 112px 48px;
     text-align: center;
     color: white;
@@ -219,17 +218,16 @@ header{
 }
 .store-container{
     width: 100%;
-    max-width: 1200px;
-    display: flex;
-    margin: 0px 40px;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 .store-container #ss-1{
-    width: 25%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding: 40px;
+    justify-content: start;
 }
 .store-container #ss-1 h3{
     text-align: center;
@@ -669,7 +667,7 @@ header{
 /* arrowup icon end */
 /* media queries for 1100px*/
 /* nav bar */
-@media screen and (max-width: 1100px){
+@media screen and (min-width: 1100px){
     .topbar{
         height: 60px;
         width: 100%;
@@ -685,7 +683,7 @@ header{
     }
 }
 /* landing page */
-@media screen and (max-width: 1100px){
+@media screen and (min-width: 1100px){
     .landing-page h1{
         font-size: 30px;
         letter-spacing: 5px;
@@ -695,16 +693,7 @@ header{
     }
 }
 /* steps-section */
-@media screen and (max-width:1100px) {
-    .steps-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-    .step-item{
-        width: 100%;
-        padding: 40px 120px
-    }
+@media screen and (min-width:1100px) {
     .step-item p{
         font-size: 15px;
     }
@@ -716,32 +705,208 @@ header{
     }
 }
 /* store section */
-@media screen and (max-width: 1100px){
+@media screen and (min-width: 1100px){
     .descripton{
         padding: 47px 50px 0px 50px;
     }
-    .store-container #ss-1 {
-        padding: 25px 20px;
-    }
 }
 /* testimonial section */
-@media screen and (max-width: 1100px){
+@media screen and (min-width: 1100px){
     .testimonial-container .testimonial-card img{
         padding: 10px;
     }
 }
 /* follow us section */
-@media screen and (max-width: 1100px){
+@media screen and (min-width: 1100px){
    
     .follow-section .follow_right p{
         width: 100%;
         max-width: 300px;
         padding: 10px 0px 12px 0px;
     }
+    .input-wrapper input {
+        max-width: 150px;
+    }
 }
 /* address section */
-@media screen and (max-width: 1100px){
+@media screen and (min-width: 1100px){
+    .right-content .form input {
+        width: 85%;
+    }
+    .right-content .form textarea {
+        width: 85%;
+    }
+}
+/* media queries for 950px*/
+@media screen and (min-width: 950px){
+    .landing-page h1{
+        font-size: 40px;
+    }
+    .landing-page p{
+        max-width: 900px;
+        font-size: 16px;
+    }
+    .steps-section{
+        grid-template-columns: auto auto;
+    }
+    .step-item:hover i {
+        transform: rotate(360deg) scale(1.4) scale(.6);
+    }
+   .descripton{
+         padding: 0px 20px 0px 20px;
+         max-width: 950px;
+   }
+   .testimonial-container{
+    max-width: 900px;   
+    align-items: baseline;
+    }
+    .testimonial-container .testimonial-card{
+       height: auto;
+       margin-bottom: 10px;
+       padding: 10px 30px 10px 30px;
+    }
     .address-wrapper{
-        padding: 55px 0px 30px 0px;
+        padding: 50px 0px 30px 0px;
+    }
+    .left-content h1{
+        font-size: 30px;
+    }
+    .left-content h3{
+        font-size: 20px;
+    }
+    .left-content p{
+        font-size: 16px;
+    }
+    .right-content h1{
+        font-size: 30px;
+    }
+    .right-content p{
+        font-size: 16px;
+    }
+    .right-content .form input {
+        width: 90%;
+        font-size: 12px;
+    }
+    .right-content .form textarea {
+        width: 90%;
+        font-size: 12px;    
+    }
+}
+/* media queries for 450px*/
+@media screen and (max-width:450px) {
+    .landing-page h1{
+        font-size: 25px;
+    }
+    .landing-page p{
+        max-width: 360px;
+        font-size: 14px;
+    }
+    .steps-section{
+        grid-template-columns: auto;
+    }
+    .store-section{
+        height: auto;
+        padding-top: 0px;
+    }
+    .store-container{
+        grid-template-columns: auto;
+    }
+    .testimonial-section{
+        height: auto;
+        padding-top: 0px;
+    }
+    .testimonial-container{
+        flex-direction: column;
+    }
+    .testimonial-container .testimonial-card{
+        width: 90%;
+        height: auto;
+        padding: 10px 10px;
+        margin: 10px 0px;
+    }
+    .descripton h1{
+        font-size: 30px;
+    }
+    .descripton #fact-text{
+        font-size: 14px;
+    }
+    .follow-section{
+        height: 60vh;
+    }
+    .follow-section .follow_left{
+        display: none;
+    }
+    .follow-section .follow_right{
+        width: 100%;
+        padding: 20px 0px;
+        justify-content: center;
+    }
+    .follow-section .follow_right h1{
+        padding: 0px 0px;
+    }
+    .follow-section .follow_right p{
+        font-size: 15px;
+    }
+    .video-section{
+        height: auto;
+        padding-top: 0px;
+    }
+    .video-wrapper{
+        padding: 0px;
+    }
+    .video-wrapper iframe{
+        height: 210px;
+        max-width: 383px;
+    }
+    .address-section{
+        height: auto;
+        padding-top: 0px;
+    }
+    .address-wrapper{
+        flex-direction: column;
+    }
+    .left-content{
+        width: 100%;
+        align-items: center;
+        margin: 0px 5px;
+    }
+    .left-content h1{
+        font-size: 30px;
+    }
+    .left-content p{
+        font-size: 15px;
+        text-align: center;
+        padding: 0px 6px;
+    }
+    .right-content{
+        width: 100%;
+        align-items: center;
+        margin: 0px 5px;
+    }
+    .right-content h1{
+        font-size: 30px;
+    }
+    .right-content p{
+        font-size: 15px;
+        text-align: center;
+        padding: 0px 6px;
+    }
+    .right-content .form:last-child{
+        align-items: center;
+    }
+    .right-content .form input {
+        width: 80%;
+        font-size: 12px;
+    }
+    .right-content .form textarea {
+        width: 80%;
+        font-size: 12px;    
+    }
+    .footer-wrapper{
+        height: auto;
+        padding: 20px 0px;
+    }
+    .footer-wrapper p{
+        text-align: center;
     }
 }
