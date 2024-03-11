@@ -52,7 +52,6 @@ header{
     border-top: 2px solid rgb(170, 210, 54);
     padding: 20px;
     position: absolute;
-    right: 384px;
     background-color: white;
     box-shadow: 0 2px 5px #ccc;
     display: none;
@@ -264,7 +263,7 @@ header{
 /* testimonial section start */
 .testimonial-section{
     width: 100%;
-    height: 90vh;
+    height: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
@@ -623,7 +622,7 @@ header{
 /* footer start */
 .footer-wrapper{
     width: 100%;
-    height: 10vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -635,6 +634,7 @@ header{
     font-size: 14px;
     font-weight: 500;
     color: white;
+    text-align: center;
     letter-spacing: 0.5px;
 }
 .footer-wrapper a{
@@ -738,7 +738,7 @@ header{
     }
 }
 /* media queries for 950px*/
-@media screen and (min-width: 950px){
+@media screen and (max-width: 950px){
     .landing-page h1{
         font-size: 40px;
     }
@@ -790,6 +790,26 @@ header{
     .right-content .form textarea {
         width: 90%;
         font-size: 12px;    
+    }
+}
+/* media queries for 768px */
+@media screen and (max-width:768px) {
+    .testimonial-container .testimonial-card {
+        padding: 10px 0px 10px 0px;
+    }
+    .input-wrapper input {
+        padding: 20px 40px;
+    }
+}
+/* media queries for 650px */
+@media screen and (max-width:650px){
+    .testimonial-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial-container .testimonial-card{
+        width: 85%;
+        margin: 5px;
     }
 }
 /* media queries for 450px*/
